@@ -11,15 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <!-- стили -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--inside of header-->
     <header class="header">
-        <nav class="navigation">
+        <div class="container header-container">
             <a class="link mainpage-link" href="/" lang="en">
                 Web<span class="logostyle-header">Studio</span>
             </a>
+         <nav class="navigation">    
             <ul class="navigation-list">
                 <!--navigation bar-->
                 <li class="list navigation-item">
@@ -33,23 +37,31 @@
                 </li>
             </ul>
         </nav>   
+        
             <ul class="header-contacts">
-                <!--contacts bar-->
+                <div class="contacts-wrapper">
+                    <!--contacts bar-->
                 <li class="list contacts-item">
                     <a class="link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="list contacts-item">
                     <a class="link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
-            </ul>              
+            </div> 
+            </ul>
+            
+         </div>                
     </header>
     <main>
-        <section class="hero">
+        <section class="section hero">
+            <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="btn hero-button" type="button">Заказать услугу</button>
+            </div>
         </section> 
         <!-- our features -->
-        <section class="features"> 
+        <section class="section features"> 
+            <div class="container">
             <h2 hidden>наши особенности</h2>  
             <ul class="features-list">
                 <li class="list features-item">
@@ -69,9 +81,11 @@
                     <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- what we do -->
-        <section class="about">
+        <section class="section about">
+            <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="about-list">
                 <li class="list about-item">
@@ -90,10 +104,12 @@
                     </a>
                 </li>                
             </ul>
+            </div>
         </section>
         <!-- our team -->
-        <section class="team">
-            <h2 class="section-title">Наша команда</h2>
+        <section class="section team">
+            <div class="container">
+            <h2 class="section-title team-title">Наша команда</h2>
             <ul class="team-list">
                 <li class="list team-item">
                     <img src="images/personnel/img1optimized.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
@@ -116,22 +132,23 @@
                     <p class="team-text">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>        
     </main>
     <footer class="footer">
-        <div class="footer-div">
+        <div class="container">
             <a class="link mainpage-link" href="/" lang="en">
                 Web<span class="logostyle-footer">Studio</span>
             </a>
             <address class="address">
                 <ul class="address-list">
-                    <li class="address-item">
+                    <li class="list address-item">
                         <a class="link address-map" href="https://google.com.ua/maps">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li class="address-item">
+                    <li class="list address-item">
                         <a class="link address-link" href="mailto:info@example.com">info@example.com</a>
                     </li>
-                    <li class="address-item">
+                    <li class="list address-item">
                         <a class="link address-link" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>                
